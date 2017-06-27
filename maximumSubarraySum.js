@@ -1,3 +1,4 @@
+// find the maximum sum of a contiguous subsequence in an array or list of integers
 function maxSequence(arr){
   
     var highestNum = 0;

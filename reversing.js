@@ -1,3 +1,4 @@
+//reverse words that are longer than 4 characters
 function spinWords(phrase){
 
     return phrase.split(" ").map(function(word){

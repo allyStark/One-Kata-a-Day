@@ -1,3 +1,4 @@
+//determine whether a string that contains only letters is an isogram (a word that contains no repeating letters).
 function check(word){
 
     word = word.toUpperCase();
@@ -5,16 +6,12 @@ function check(word){
     var i = 0;
 
     while(i < word.length - 1){
-
-        for (var j = word.length - 1; j > i; j--){
-
-            if (word[i] === word[j]){
+   
+            if (word.indexOf(word[i], i + 1) !== -1){
 
                 return false;
 
             }
-
-        }
 
         i++;
 
@@ -23,5 +20,5 @@ function check(word){
     return true;
 
 }
-
+//test
 console.log(check(process.argv[2]));

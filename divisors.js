@@ -1,5 +1,4 @@
-var int = process.argv[2];
-
+//take an integer and return an array with all integers divisors (except one and itself). If number is prime, return n is prime.
 function getDivs(num){
 
     var returnArr = [];
@@ -25,5 +24,5 @@ function getDivs(num){
     return returnArr.length === 0 ? int + " is a prime" : returnArr.concat(returnArr2);
 
 }
-
-getDivs(int);
+//test
+getDivs(100);

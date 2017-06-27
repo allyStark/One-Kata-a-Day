@@ -1,3 +1,4 @@
+//check if strings in a2 contain the strings in a1 as substrings. Return all a1 strings that are contained in a2.
 function inArray(array1,array2){
 
     var returnArr = array1.filter(function(word){

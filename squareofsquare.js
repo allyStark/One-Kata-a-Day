@@ -1,3 +1,4 @@
+//check if int is a perfect square
 function isSquare(n){
 
     var answer = Math.sqrt(n);
@@ -6,4 +7,4 @@ function isSquare(n){
 
 }
 
-console.log(isSquare(process.argv[2]));
+console.log(isSquare(25));

@@ -1,5 +1,6 @@
+//encrypt a string n times by taking every second letter out and placing them at the back of the string
 function encrypt(text, n) {
-
+    //input workable?
     if (n < 1 || text.length < 1){
 
         return text;
@@ -15,10 +16,11 @@ function encrypt(text, n) {
         i % 2 === 0 ? evenArr.push(text[i]) : oddArr.push(text[i]);
 
     }
+    
     return n > 1 ? encrypt(oddArr.concat(evenArr).join(""), n - 1) : oddArr.concat(evenArr).join("");
 
 }
-
+//decrypt the above encryption n times
 function decrypt(encryptedText, n) {
 
     if (n < 1 || encryptedText.length < 1){
@@ -49,7 +51,7 @@ function decrypt(encryptedText, n) {
     return n > 1 ? decrypt(returnStr, n - 1) : returnStr;
 }
 //test example
-var test = encrypt("Hello there!", 0);
-var test2 = decrypt(test, 0);
+var test = encrypt("Hello there!", 5);
+var test2 = decrypt(test, 5);
 
 
