@@ -1,5 +1,4 @@
 // calculate the number of trailing zeros in a factorial of a given number.
-
 function zeros (n) {
 
 var trailing = 0;
