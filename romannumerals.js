@@ -17,4 +17,4 @@ function solution(number){
     return returnStr;
 }
 
-console.log(solution(1990));
+console.log(solution(process.argv[2]));
