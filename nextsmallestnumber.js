@@ -21,15 +21,12 @@ function nextSmaller(n) {
             highIndex[1] = j;
         }
     }
-    //console.log(arr);
     arr[highIndex[1]] = lowIndex[0];
     arr[lowIndex[1]] = highIndex[0];
     var sliced = arr.slice(lowIndex[1] + 1, arr.length);
     sliced.sort(function(a,b){
         return b - a;
     });
-    console.log(arr.length);
-    console.log(n.length);
     arr = arr.slice(0, lowIndex[1] + 1).concat(sliced).join("");
     return Number(arr) < 0 || arr[0] == 0 ? -1 : arr ;
 }
